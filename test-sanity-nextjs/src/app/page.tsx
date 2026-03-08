@@ -31,7 +31,7 @@ export default async function IndexPage() {
           : null
         return (
           <div key={banner._id}>
-            <h2>{banner.title}</h2>
+            <h2 className="py-4">{banner.title}</h2>
             {bannerImageUrl && (
               <img
                 src={bannerImageUrl}
@@ -44,7 +44,7 @@ export default async function IndexPage() {
           </div>
         )
       })}
-      <h2 className="text-3xl font-bold mb-8">Posts</h2>
+      <h2 className="text-3xl font-bold mb-4 pt-8">Posts</h2>
       <ul className="flex flex-col gap-y-4">
         {posts.map((post) => (
           <li className="hover:underline" key={post._id}>
